@@ -12,7 +12,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
-import br.imd.rest.expections.RestRequestException;
+import br.imd.rest.exceptions.RestRequestException;
 
 
 public class HttpUtils {

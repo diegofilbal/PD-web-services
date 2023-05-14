@@ -1,4 +1,4 @@
-package br.imd.rest.expections;
+package br.imd.rest.exceptions;
 
 public class RestRequestException extends Exception {
 

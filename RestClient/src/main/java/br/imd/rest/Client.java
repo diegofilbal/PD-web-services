@@ -3,7 +3,7 @@ package br.imd.rest;
 import java.util.HashMap;
 import java.util.Map;
 
-import br.imd.rest.expections.RestRequestException;
+import br.imd.rest.exceptions.RestRequestException;
 
 public class Client {
 
