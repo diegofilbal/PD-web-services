@@ -25,7 +25,7 @@ public class Client {
 
 	public void helloPeople() throws RestRequestException {
 
-		String name = "Jorge";
+		String name = "Silvia";
 		String uri = "http://localhost:8080/RestServer/restapi/hello/hello-people/"+name;
 		Map<String, String> headerParams = new HashMap<String, String>();
 
@@ -38,8 +38,8 @@ public class Client {
 	
 	public void helloPeople2() throws RestRequestException {
 
-		String name = "Jorge";
-		String sobrenome = "Silva";
+		String name = "Diego";
+		String sobrenome = "Filgueiras";
 		String uri = "http://localhost:8080/RestServer/restapi/hello/hello-people2"
 				+ "?nome="+name+"&sobrenome="+sobrenome;
 		Map<String, String> headerParams = new HashMap<String, String>();
@@ -60,7 +60,7 @@ public class Client {
 		headerParams.put("accept", "application/json");
 		headerParams.put("content-type", "text/plain");
 		
-		String response = HttpUtils.httpPostRequest(uri, headerParams, "Jorge", 200);
+		String response = HttpUtils.httpPostRequest(uri, headerParams, "Diego", 200);
 
 		System.out.println(response);
 	}

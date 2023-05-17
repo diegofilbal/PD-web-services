@@ -7,17 +7,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-    <configuration>
-        <mainClass>br.imd.app.RestEasyServices</mainClass>
-    </configuration>
-
-
     <properties>
         <resteasy.version>3.15.6.Final</resteasy.version>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <java.version>16</java.version>
     </properties>
-    
+
     <dependencies>
         <!-- Set up RESTEasy -->
         <dependency>
@@ -35,8 +31,12 @@
             <artifactId>resteasy-jackson-provider</artifactId>
             <version>${resteasy.version}</version>
         </dependency>
-        
-        
+        <!--  RESTEasy Client Dependency -->
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
