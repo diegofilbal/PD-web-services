@@ -7,9 +7,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+    <configuration>
+        <mainClass>br.imd.app.RestEasyServices</mainClass>
+    </configuration>
 
-	<properties>
-        <resteasy.version>3.9.3.Final</resteasy.version>
+
+    <properties>
+        <resteasy.version>3.15.6.Final</resteasy.version>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
     </properties>
     
     <dependencies>
@@ -34,7 +40,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
