@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f5d4af-805b-43be-a89e-be695c8b390a" name="Changes" comment="" />
+    <list default="true" id="45f5d4af-805b-43be-a89e-be695c8b390a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestServer/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestServer/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestServer/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +29,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/diego/Documents/PD-web-services/RestServer",
+    "last_opened_file_path": "/home/silvia/PD-web-services/RestServer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684172105437</updated>
       <workItem from="1684172107142" duration="26000" />
+      <workItem from="1684669063433" duration="905000" />
     </task>
     <servers />
   </component>
