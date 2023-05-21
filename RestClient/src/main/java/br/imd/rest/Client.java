@@ -5,7 +5,7 @@ import java.util.Map;
 
 import br.imd.rest.exceptions.RestRequestException;
 
-public class Client {
+public class popClient {
 
 	public Client() {
 		// TODO Auto-generated constructor stub
