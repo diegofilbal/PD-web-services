@@ -18,6 +18,7 @@ public class ServerService {
 
 
     public ServerService() {
+        usuarios.add(new Administrador("admin", "admin", true, true));
     }
 
     // Metodo que cadastra novo usuario
