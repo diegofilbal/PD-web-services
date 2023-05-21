@@ -5,6 +5,7 @@ import com.example.restserver.model.Usuario;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -32,12 +33,14 @@ public class ServerService {
                 } else {
                     usuarios.add(new Usuario(nome, senha, podeLer, podeEscrever));
                 }
+                System.out.println("[" + new Date() + "] Usuario \"" + nome + "\" registrado com sucesso!");
                 return true;
             }
+            System.out.println("[" + new Date() + "] Usuario \"" + nome + "\" ja existe!");
             return false;
 
         } catch (Exception e) {
-            System.out.println("Erro ao registrar usuario na classe cliente");
+            System.out.println("[" + new Date() + "] Erro inesperado ao registrar usuario \"" + nome + "\" na classe cliente");
             e.printStackTrace();
             return false;
         }
@@ -45,29 +48,44 @@ public class ServerService {
 
     // Metodo que autentica um usuario e o autoriza a operar um objeto
     public String solicitaAcesso(String nome, String senha, String objeto, String operacao) {
+        String msg;
         try {
             // Verifica se o usuario existe e se a senha esta correta
             Usuario usuario = autentica(nome, senha);
             if (usuario != null) {
                 if (operacao.equals("ler") && usuario.isPodeLer()) {
                     if (!objetos.contains(objeto)) {
-                        return "Objeto nao existe!";
+                        msg = "Objeto \"" + objeto + "\" nao existe!";
+                        System.out.println("[" + new Date() + "] " + msg);
+                        return msg;
                     }
-                    return "Acesso concedido!";
+                    msg = "Acesso concedido!";
+                    System.out.println("[" + new Date() + "] " + msg);
+                    return msg;
 
                 } else if (operacao.equals("escrever") && usuario.isPodeEscrever()) {
                     if (!objetos.contains(objeto)) {
                         objetos.add(objeto);
-                        return "Objeto criado!";
+                        msg = "Objeto \"" + objeto + "\" criado!";
+                        System.out.println("[" + new Date() + "] " + msg);
+                        return msg;
                     }
-                    return "Acesso concedido!";
+                    msg = "Acesso concedido!";
+                    System.out.println("[" + new Date() + "] " + msg);
+                    return msg;
                 }
-                return "Acesso negado!";
+                msg = "Acesso negado!";
+                System.out.println("[" + new Date() + "] " + msg);
+                return msg;
             }
-            return "Usuario nao encontrado!";
+            msg = "Usuario nao encontrado!";
+            System.out.println("[" + new Date() + "] " + msg);
+            return msg;
         } catch (Exception e) {
             e.printStackTrace();
-            return "Erro ao solicitar acesso!";
+            msg = "Erro ao solicitar acesso!";
+            System.out.println("[" + new Date() + "] " + msg);
+            return msg;
         }
     }
 
