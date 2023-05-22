@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f5d4af-805b-43be-a89e-be695c8b390a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestServer/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestServer/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestServer/src/main/java/com/example/restserver/service/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestServer/src/main/java/com/example/restserver/service/ServerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +30,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/silvia/PD-web-services/RestServer",
+    "last_opened_file_path": "/home/diego/Documents/Estudos/2023/2023.1/Programação Distribuida/WebServices/PD-web-services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -55,6 +53,7 @@
       <updated>1684172105437</updated>
       <workItem from="1684172107142" duration="26000" />
       <workItem from="1684669063433" duration="905000" />
+      <workItem from="1684724817331" duration="656000" />
     </task>
     <servers />
   </component>

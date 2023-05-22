@@ -108,36 +108,6 @@ public class ServerService {
         return false;
     }
 
-    public void listaUsuarios() {
-        if (usuarios.isEmpty()) {
-            System.out.println("\nNenhum usuario cadastrado");
-        } else {
-            System.out.println();
-            for (Usuario usuario : usuarios) {
-                System.out.println("--------------------------------");
-                System.out.println("Nome: " + usuario.getNome());
-                System.out.println("Senha: " + usuario.getSenha());
-                System.out.println("Leitura: " + usuario.isPodeLer());
-                System.out.println("Escrita: " + usuario.isPodeEscrever());
-                System.out.println("Eh Admin: " + (usuario instanceof Administrador));
-            }
-            System.out.println("--------------------------------\n");
-        }
-    }
-
-    public void listaObjetos() {
-        if (objetos.isEmpty()) {
-            System.out.println("\nNenhum objeto cadastrado!");
-        } else {
-            System.out.println();
-            for (String obj : objetos) {
-                System.out.println("--------------------------------");
-                System.out.println("Nome: " + obj);
-            }
-            System.out.println("--------------------------------\n");
-        }
-    }
-
     private Usuario getUsuario(String nome) {
         for (Usuario usuario : usuarios) {
             if (usuario.getNome().equals(nome)) {
@@ -145,12 +115,5 @@ public class ServerService {
             }
         }
         return null;
-    }
-
-    public void reset() {
-        usuarios.clear();
-        registraUsuario("admin", "admin", true, true, true);
-        objetos.clear();
-        System.out.println("\nUsuarios e objetos resetados!");
     }
 }
